@@ -8,7 +8,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-gatsby-cloud',
-    'gatsby-plugin-loadable-components-ssr',
   ],
   siteMetadata: {
     title: 'Djowo Klaten',
