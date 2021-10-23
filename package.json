@@ -2,7 +2,7 @@
   "name": "djowo-klaten",
   "author": "Priambudi Lintang Bagaskara",
   "email": "priambudibagaskara@gmail.com",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "develop": "gatsby develop",
