@@ -2,22 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { useTheme } from '@mui/material/styles';
+// import { useTheme } from '@mui/material/styles';
 
-import NavItem from './components/NavItem';
+// import NavItem from './components/NavItem';
 
 const SidebarNav = ({ pages }) => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
+  // const theme = useTheme();
+  // const { mode } = theme.palette;
 
-  const {
-    landings: landingPages,
-    secondary: secondaryPages,
-    company: companyPages,
-    account: accountPages,
-    portfolio: portfolioPages,
-    blog: blogPages,
-  } = pages;
+  // const {
+  //   landings: landingPages,
+  //   secondary: secondaryPages,
+  //   company: companyPages,
+  //   account: accountPages,
+  //   portfolio: portfolioPages,
+  //   blog: blogPages,
+  // } = pages;
 
   return (
     <Box>
@@ -26,23 +26,19 @@ const SidebarNav = ({ pages }) => {
           display={'flex'}
           component="a"
           href="/"
-          title="theFront"
+          title="Djowo Klaten"
           width={{ xs: 100, md: 120 }}
         >
           <Box
             component={'img'}
-            src={
-              mode === 'light'
-                ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-            }
+            src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.png"
             height={1}
             width={1}
           />
         </Box>
       </Box>
       <Box paddingX={2} paddingY={2}>
-        <Box>
+        {/* <Box>
           <NavItem title={'Landings'} items={landingPages} />
         </Box>
         <Box>
@@ -70,7 +66,7 @@ const SidebarNav = ({ pages }) => {
           >
             Documentation
           </Button>
-        </Box>
+        </Box> */}
         <Box marginTop={1}>
           <Button
             size={'large'}
@@ -79,9 +75,9 @@ const SidebarNav = ({ pages }) => {
             fullWidth
             component="a"
             target="blank"
-            href="https://material-ui.com/store/items/the-front-landing-page/"
+            href="https://linktr.ee/DjowoKlaten_Pusat"
           >
-            Purchase now
+            Pesan sekarang
           </Button>
         </Box>
       </Box>

@@ -7,6 +7,7 @@ module.exports = {
     'gatsby-plugin-mui-emotion',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-resolve-src',
+    'gatsby-plugin-gatsby-cloud',
   ],
   siteMetadata: {
     title: 'theFront - Material-UI Multipurpose Theme and UI Kit',

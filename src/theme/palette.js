@@ -6,9 +6,9 @@ export const light = {
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
   primary: {
-    main: '#377dff',
-    light: '#467de3',
-    dark: '#2f6ad9',
+    main: '#048C39',
+    light: '#05A442',
+    dark: '#047730',
     contrastText: '#fff',
   },
   secondary: {
@@ -28,6 +28,24 @@ export const light = {
     level2: '#f5f5f5',
     level1: '#ffffff',
   },
+  gofood: {
+    main: '#EE2637',
+    light: '#EE2637',
+    dark: '#EE2637',
+    contrastText: '#fff',
+  },
+  grabfood: {
+    main: '#00b14f',
+    light: '#00b14f',
+    dark: '#00b14f',
+    contrastText: '#fff',
+  },
+  shopeefood: {
+    main: '#FF3A1A',
+    light: '#FF3A1A',
+    dark: '#FF3A1A',
+    contrastText: '#fff',
+  },
 };
 
 export const dark = {
@@ -42,9 +60,9 @@ export const dark = {
   },
   mode: 'dark',
   primary: {
-    main: '#1976d2',
-    light: '#2196f3',
-    dark: '#0d47a1',
+    main: '#048C39',
+    light: '#05A442',
+    dark: '#047730',
     contrastText: '#fff',
   },
   secondary: {
@@ -63,5 +81,23 @@ export const dark = {
     default: '#222B45',
     level2: '#333',
     level1: '#2D3748',
+  },
+  gofood: {
+    main: '#EE2637',
+    light: '#EE2637',
+    dark: '#EE2637',
+    contrastText: '#fff',
+  },
+  grabfood: {
+    main: '#00b14f',
+    light: '#00b14f',
+    dark: '#00b14f',
+    contrastText: '#fff',
+  },
+  shopeefood: {
+    main: '#FF3A1A',
+    light: '#FF3A1A',
+    dark: '#FF3A1A',
+    contrastText: '#fff',
   },
 };
