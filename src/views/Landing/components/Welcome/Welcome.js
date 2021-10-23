@@ -24,6 +24,7 @@ const Welcome = () => {
       <Typography
         variant="h1"
         color={'primary'}
+        align={'center'}
         gutterBottom
         sx={{
           background: `linear-gradient(to right, ${theme.palette.primary.main}, ${theme.palette.primary.dark})`,

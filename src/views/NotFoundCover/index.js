@@ -1,3 +1,2 @@
-import loadable from '@loadable/component';
-const LoadableComponent = loadable(() => import('./NotFoundCover'));
-export default LoadableComponent;
+import View from './NotFoundCover'
+export default View;
