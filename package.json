@@ -7,6 +7,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "cross-env GENERATE_SOURCEMAP=false gatsby build",
+    "serve": "gatsby serve",
     "prettier:fix": "prettier './src/**/*.js' --write",
     "eslint:fix": "eslint ./src --fix",
     "codeStyle:fix": "npm run prettier:fix && npm run eslint:fix",
@@ -36,6 +37,7 @@
     "@emotion/react": "^11.4.0",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.3.0",
+    "@loadable/component": "^5.15.0",
     "@mui/icons-material": "^5.0.1",
     "@mui/material": "^5.0.2",
     "aos": "^2.3.4",
@@ -43,6 +45,7 @@
     "formik": "^2.2.6",
     "gatsby": "^4.0.0",
     "gatsby-plugin-gatsby-cloud": "^4.0.0",
+    "gatsby-plugin-loadable-components-ssr": "^3.4.0",
     "gatsby-plugin-material-ui": "^4.0.2",
     "gatsby-plugin-page-creator": "^3.13.0",
     "gatsby-plugin-react-helmet": "^4.13.0",

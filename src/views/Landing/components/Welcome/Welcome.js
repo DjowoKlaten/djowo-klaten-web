@@ -13,26 +13,26 @@ const Welcome = () => {
     <Box>
       <Typography
         variant="h2"
+        component="p"
         align={'center'}
-        gutterBottom
         sx={{
           don: 900,
         }}
       >
         Rumah Makan
-        <br />
-        <Typography
-          variant="h1"
-          color={'primary'}
-          sx={{
-            background: `linear-gradient(to right, ${theme.palette.primary.main}, ${theme.palette.primary.dark})`,
-            backgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            fontWeight: 900,
-          }}
-        >
-          Djowo Klaten
-        </Typography>
+      </Typography>
+      <Typography
+        variant="h1"
+        color={'primary'}
+        gutterBottom
+        sx={{
+          background: `linear-gradient(to right, ${theme.palette.primary.main}, ${theme.palette.primary.dark})`,
+          backgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          fontWeight: 900,
+        }}
+      >
+        Djowo Klaten
       </Typography>
       <Typography
         variant="h6"
@@ -52,7 +52,8 @@ const Welcome = () => {
     <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
       {[
         {
-          src: 'https://lelogama.go-jek.com/service_icon_text/gofood_inverse.svg',
+          src:
+            'https://lelogama.go-jek.com/service_icon_text/gofood_inverse.svg',
           href: 'https://linktr.ee/DjowoKlaten_Pusat',
           color: 'gofood',
         },
@@ -76,11 +77,7 @@ const Welcome = () => {
             href={item.href}
             size="medium"
           >
-            <Box
-              component="img"
-              src={item.src}
-              height="20px"
-            />
+            <Box component="img" src={item.src} height="20px" />
           </Button>
         </Box>
       ))}

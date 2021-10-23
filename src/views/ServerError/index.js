@@ -1,1 +1,3 @@
-export { default } from './ServerError';
+import loadable from '@loadable/component';
+const LoadableComponent = loadable(() => import('./ServerError'));
+export default LoadableComponent;

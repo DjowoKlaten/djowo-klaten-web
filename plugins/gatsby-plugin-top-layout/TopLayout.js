@@ -17,7 +17,7 @@ export default function TopLayout(props) {
         <meta charSet="utf-8" />
         <link
           rel="shortcut icon"
-          href="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.png"
+          href="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.ico"
         />
         <meta
           name="viewport"
