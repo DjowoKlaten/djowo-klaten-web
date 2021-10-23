@@ -50,8 +50,8 @@ const Topbar = ({ onSidebarOpen, pages }) => {
           <NavItem
             title={'Landings'}
             id={'landing-pages'}
-            // items={landingPages}
-            items={[]}
+            items={landingPages}
+            // items={[]}
           />
         </Box>
         <Box marginLeft={2.5}>

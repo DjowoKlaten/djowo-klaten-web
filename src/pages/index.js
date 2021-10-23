@@ -1,8 +1,9 @@
 import React from 'react';
+import Landing from 'views/Landing';
 import IndexView from 'views/IndexView';
 
 const IndexPage = () => {
-  return <IndexView />;
+  return <Landing />;
 };
 
 export default IndexPage;

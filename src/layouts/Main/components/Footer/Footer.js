@@ -83,7 +83,7 @@ const Footer = () => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+          &copy; CV. Rahma Lintang Larasati {new Date().getFullYear()}, Maccarian. All rights reserved
         </Typography>
         <Typography
           align={'center'}
