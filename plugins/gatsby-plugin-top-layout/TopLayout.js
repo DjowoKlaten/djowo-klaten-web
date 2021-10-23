@@ -17,17 +17,17 @@ export default function TopLayout(props) {
         <meta charSet="utf-8" />
         <link
           rel="shortcut icon"
-          href="https://assets.maccarianagency.com/favicons/thefront/favicon.ico"
+          href="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.png"
         />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>theFront | UI Kit by Maccarian Agency.</title>
+        <title>Djowo Klaten</title>
         <meta name="theme-color" content="#ffffff" />
         <meta
           name="description"
-          content="A modern design system for your new landing and web pages."
+          content="Rumah makan djowo klaten, penyetan dan mie jawa. Pas di lidah, berkesan di hati."
         />
         <meta
           name="robots"
@@ -37,19 +37,19 @@ export default function TopLayout(props) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://assets.maccarianagency.com/screenshots/the-front/social.png"
+          content="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.png"
         />
         <meta
           property="og:title"
-          content="theFront | UI Kit by Maccarian Agency."
+          content="Djowo Klaten"
         />
         <meta
           property="og:description"
-          content="A modern design system for your new landing and web pages."
+          content="Rumah makan djowo klaten, penyetan dan mie jawa. Pas di lidah, berkesan di hati."
         />
         <meta
           property="og:url"
-          content="https://thefront.maccarianagency.com/"
+          content="https://djowoklaten.id"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link

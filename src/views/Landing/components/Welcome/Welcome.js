@@ -4,6 +4,7 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import { Button } from '@mui/material';
 
 const Welcome = () => {
   const theme = useTheme();
@@ -50,27 +51,37 @@ const Welcome = () => {
   const GridItemPartnersBlock = () => (
     <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
       {[
-        'https://assets.maccarianagency.com/svg/logos/airbnb-original.svg',
-        'https://assets.maccarianagency.com/svg/logos/amazon-original.svg',
-        'https://assets.maccarianagency.com/svg/logos/fitbit-original.svg',
-        'https://assets.maccarianagency.com/svg/logos/netflix-original.svg',
-        'https://assets.maccarianagency.com/svg/logos/google-original.svg',
-        'https://assets.maccarianagency.com/svg/logos/paypal-original.svg',
+        {
+          src: 'https://lelogama.go-jek.com/service_icon_text/gofood_inverse.svg',
+          href: 'https://linktr.ee/DjowoKlaten_Pusat',
+          color: 'gofood',
+        },
+        {
+          src: 'https://food.grab.com/static/images/logo-grabfood-white.svg',
+          href: 'https://linktr.ee/DjowoKlaten_Pusat',
+          color: 'grabfood',
+        },
+        {
+          src: 'https://svgshare.com/i/bSB.svg',
+          href: 'https://linktr.ee/DjowoKlaten_Pusat',
+          color: 'shopeefood',
+        },
       ].map((item, i) => (
-        <Box maxWidth={100} marginTop={2} marginRight={4} key={i}>
-          <Box
-            component="img"
-            height={1}
-            width={1}
-            src={item}
-            alt="..."
-            sx={{
-              filter:
-                theme.palette.mode === 'dark'
-                  ? 'brightness(0) invert(0.7)'
-                  : 'none',
-            }}
-          />
+        <Box key={i} marginRight={2} marginBottom={2}>
+          <Button
+            variant="contained"
+            color={item.color}
+            component="a"
+            target="blank"
+            href={item.href}
+            size="medium"
+          >
+            <Box
+              component="img"
+              src={item.src}
+              height="20px"
+            />
+          </Button>
         </Box>
       ))}
     </Box>

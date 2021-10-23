@@ -14,8 +14,8 @@ import {
   Nike,
   Trek,
   Curology,
-  Reviews,
   Contact,
+  Reviews,
 } from './components';
 
 const Agency = () => {
@@ -83,7 +83,7 @@ const Agency = () => {
                   fill="currentColor"
                   width={{ xs: 30, sm: 40 }}
                   height={{ xs: 30, sm: 40 }}
-                  onClick={() => scrollTo('agency__portfolio-item--js-scroll')}
+                  onClick={() => scrollTo('contact')}
                   sx={{ cursor: 'pointer' }}
                 >
                   <path
@@ -97,7 +97,7 @@ const Agency = () => {
           </Box>
         </Container>
       </Box>
-      <Box
+      {/* <Box
         className={'jarallax'}
         data-jarallax
         data-speed="0.2"
@@ -235,12 +235,13 @@ const Agency = () => {
         <Container>
           <Nike2 />
         </Container>
-      </Box>
+      </Box> */}
       <Box
         minHeight={'100vh'}
         display={'flex'}
         alignItems={'center'}
         bgcolor={'alternate.main'}
+        id="contact"
       >
         <Container>
           <Contact />

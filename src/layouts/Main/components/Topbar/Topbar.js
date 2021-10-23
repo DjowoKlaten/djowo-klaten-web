@@ -2,23 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import { NavItem, ThemeModeToggler } from './components';
+import { 
+  // NavItem,
+  ThemeModeToggler } from './components';
 
 const Topbar = ({ onSidebarOpen, pages }) => {
   const theme = useTheme();
-  const { mode } = theme.palette;
-  const {
-    landings: landingPages,
-    secondary: secondaryPages,
-    company: companyPages,
-    account: accountPages,
-    portfolio: portfolioPages,
-    blog: blogPages,
-  } = pages;
+  // const {
+  //   landings: landingPages,
+  //   secondary: secondaryPages,
+  //   company: companyPages,
+  //   account: accountPages,
+  //   portfolio: portfolioPages,
+  //   blog: blogPages,
+  // } = pages;
 
   return (
     <Box
@@ -36,22 +37,16 @@ const Topbar = ({ onSidebarOpen, pages }) => {
       >
         <Box
           component={'img'}
-          src={
-            mode === 'light'
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-          }
-          height={1}
-          width={1}
+          src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.png"
+          height={'32px'}
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
-        <Box>
+        {/* <Box>
           <NavItem
             title={'Landings'}
             id={'landing-pages'}
             items={landingPages}
-            // items={[]}
           />
         </Box>
         <Box marginLeft={2.5}>
@@ -76,11 +71,7 @@ const Topbar = ({ onSidebarOpen, pages }) => {
           />
         </Box>
         <Box marginLeft={2.5}>
-          <NavItem
-            title={'Blog'}
-            id={'blog-pages'}
-            items={blogPages}
-          />
+          <NavItem title={'Blog'} id={'blog-pages'} items={blogPages} />
         </Box>
         <Box marginLeft={2.5}>
           <NavItem
@@ -98,7 +89,7 @@ const Topbar = ({ onSidebarOpen, pages }) => {
           >
             Docs
           </Link>
-        </Box>
+        </Box> */}
         <Box marginLeft={2.5}>
           <ThemeModeToggler />
         </Box>
@@ -108,10 +99,10 @@ const Topbar = ({ onSidebarOpen, pages }) => {
             color="primary"
             component="a"
             target="blank"
-            href="https://material-ui.com/store/items/the-front-landing-page/"
+            href="https://linktr.ee/DjowoKlaten_Pusat"
             size="large"
           >
-            Buy now
+            Pesan sekarang
           </Button>
         </Box>
       </Box>

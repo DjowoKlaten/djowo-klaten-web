@@ -5,6 +5,9 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
+import { IconButton } from '@mui/material';
+import Instagram from '@mui/icons-material/Instagram';
+import { WhatsApp } from '@mui/icons-material';
 
 const Footer = () => {
   const theme = useTheme();
@@ -24,53 +27,36 @@ const Footer = () => {
             display={'flex'}
             component="a"
             href="/"
-            title="theFront"
+            title="Djowo Klaten"
             width={80}
           >
             <Box
               component={'img'}
-              src={
-                mode === 'light'
-                  ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                  : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
-              }
-              height={1}
-              width={1}
+              src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.png"
+              height={'32px'}
             />
           </Box>
           <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
             <Box marginTop={1} marginRight={2}>
-              <Link
-                underline="none"
-                component="a"
-                href="/"
-                color="text.primary"
-                variant={'subtitle2'}
-              >
-                Home
-              </Link>
+              <IconButton aria-label="instagram" href="https://www.instagram.com/djowo_klaten/">
+                <Instagram />
+              </IconButton>
             </Box>
             <Box marginTop={1} marginRight={2}>
-              <Link
-                underline="none"
-                component="a"
-                href="/docs/introduction"
-                color="text.primary"
-                variant={'subtitle2'}
-              >
-                Documentation
-              </Link>
+              <IconButton aria-label="whatsapp" href="https://wa.me/c/6287774833596">
+                <WhatsApp />
+              </IconButton>
             </Box>
             <Box marginTop={1}>
               <Button
-                variant="outlined"
+                variant="contained"
                 color="primary"
                 component="a"
                 target="blank"
-                href="https://material-ui.com/store/items/the-front-landing-page/"
+                href="https://linktr.ee/DjowoKlaten_Pusat"
                 size="small"
               >
-                Purchase now
+                Pesan sekarang
               </Button>
             </Box>
           </Box>
@@ -83,18 +69,8 @@ const Footer = () => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; CV. Rahma Lintang Larasati {new Date().getFullYear()}, Maccarian. All rights reserved
-        </Typography>
-        <Typography
-          align={'center'}
-          variant={'caption'}
-          color="text.secondary"
-          component={'p'}
-        >
-          When you visit or interact with our sites, services or tools, we or
-          our authorised service providers may use cookies for storing
-          information to help provide you with a better, faster and safer
-          experience and for marketing purposes.
+          &copy; {new Date().getFullYear()} Djowo Klaten. Djowo Klaten is a
+          trademark of CV. Rahma Lintang Larasati.
         </Typography>
       </Grid>
     </Grid>
