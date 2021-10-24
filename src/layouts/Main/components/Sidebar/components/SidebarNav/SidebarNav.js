@@ -17,7 +17,7 @@ const SidebarNav = ({ pages }) => {
         >
           <StaticImage
             src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.png"
-            height="32"
+            height={32}
             alt="Djowo Klaten"
           />
         </Box>

@@ -79,7 +79,7 @@ const Welcome = () => {
             href={item.href}
             size="medium"
           >
-            <Box component="img" src={item.src} height="20px" />
+            <Box component="img" alt={item.color} src={item.src} height="20px" />
           </Button>
         </Box>
       ))}
