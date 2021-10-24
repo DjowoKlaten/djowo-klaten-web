@@ -30,6 +30,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
+    'gatsby-plugin-sitemap',
   ],
   siteMetadata: {
     title: 'Djowo Klaten',
