@@ -27,7 +27,7 @@ export default function TopLayout(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>Djowo Klaten</title>
+        <title>Rumah Makan Penyetan dan Mie Jawa - Djowo Klaten</title>
         <meta name="theme-color" content="#ffffff" />
         <meta
           name="description"
@@ -43,7 +43,7 @@ export default function TopLayout(props) {
           property="og:image"
           content="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.png"
         />
-        <meta property="og:title" content="Djowo Klaten" />
+        <meta property="og:title" content="Rumah Makan Penyetan dan Mie Jawa - Djowo Klaten" />
         <meta
           property="og:description"
           content="Rumah makan djowo klaten, penyetan dan mie jawa. Pas di lidah, berkesan di hati."
