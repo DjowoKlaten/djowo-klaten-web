@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "develop": "gatsby develop",
-    "build": "cross-env GENERATE_SOURCEMAP=false gatsby build",
+    "build": "cross-env GENERATE_SOURCEMAP=false gatsby build --open-tracing-config-file ./node_modules/gatsby-build-newrelic/zipkin-local.js --graphql-tracing",
     "serve": "gatsby serve",
     "prettier:fix": "prettier './src/**/*.js' --write",
     "eslint:fix": "eslint ./src --fix",
@@ -43,6 +43,7 @@
     "card-validator": "^8.1.1",
     "formik": "^2.2.6",
     "gatsby": "^4.0.0",
+    "gatsby-build-newrelic": "^1.1.3",
     "gatsby-plugin-gatsby-cloud": "^4.0.0",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-material-ui": "^4.0.2",

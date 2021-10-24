@@ -1,4 +1,8 @@
 /* eslint-disable no-undef */
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   plugins: [
     'gatsby-plugin-top-layout',
@@ -14,8 +18,8 @@ module.exports = {
       options: {
         defaults: {
           formats: ['auto', 'webp', 'avif'],
-          placeholder: 'dominantColor',
-          quality: 90,
+          placeholder: 'blurred',
+          quality: process.env.GATSBY_STATIC_IMAGE_QUALITY || 100,
           breakpoints: [750, 1080, 1366, 1920],
           backgroundColor: 'transparent',
           tracedSVGOptions: {},
@@ -23,17 +27,26 @@ module.exports = {
           jpgOptions: {},
           pngOptions: {},
           webpOptions: {},
-          avifOptions: {
-            
-          },
+          avifOptions: {},
         },
       },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-build-newrelic',
+      options: {
+        NR_LICENSE_KEY: process.env.GATSBY_NR_LICENSE_KEY || '',
+        NR_ACCOUNT_ID: process.env.GATSBY_NR_ACCOUNT_ID || '',
+        SITE_NAME: 'djowo-klaten',
+        customTags: {
+          gatsbySite: 'djowo-klaten',
+        },
+      },
+    },
   ],
   siteMetadata: {
     title: 'Rumah Makan Penyetan dan Mie Jawa - Djowo Klaten',
-    siteUrl: 'https://djowoklaten.id'
+    siteUrl: 'https://djowoklaten.id',
   },
 };

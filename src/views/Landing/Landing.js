@@ -83,8 +83,10 @@ const Agency = () => {
       >
         <StaticImage
           className="jarallax-img"
-          src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/food/sajian-6.jpeg"
+          src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/food/sajian-4"
           alt="Mie Godog"
+          loading="lazy"
+          quality={70}
         />
         <Container>
           <MieJawa />
@@ -107,8 +109,10 @@ const Agency = () => {
       >
         <StaticImage
           className="jarallax-img"
-          src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/food/sajian-7.jpeg"
+          src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/food/sajian-2"
           alt="Jamu"
+          loading="lazy"
+          quality={70}
         />
         <Container>
           <Jamu />
