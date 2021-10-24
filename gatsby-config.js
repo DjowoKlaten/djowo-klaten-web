@@ -34,5 +34,6 @@ module.exports = {
   ],
   siteMetadata: {
     title: 'Djowo Klaten',
+    siteUrl: 'https://djowoklaten.id'
   },
 };

@@ -10444,6 +10444,11 @@ react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-lite-youtube-embed@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-lite-youtube-embed/-/react-lite-youtube-embed-2.1.0.tgz#51fec6749009ed8820fb55a23c2074bfc04694d9"
+  integrity sha512-tK91bU+tkFtVVJQf7tQlvVTCdjtVFnx4A6R+y8x2AjUip6cHjcKsdr3yvD97uK0GzyWQ7dP7ROY2IU6BJNX88Q==
+
 react-modal@^3.11.1:
   version "3.14.3"
   resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.14.3.tgz#7eb7c5ec85523e5843e2d4737cc17fc3f6aeb1c0"

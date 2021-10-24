@@ -28,7 +28,7 @@ const Footer = () => {
           >
             <StaticImage
               src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.png"
-              height="32"
+              height={32}
               alt="Djowo Klaten"
             />
           </Box>
@@ -68,6 +68,7 @@ const Footer = () => {
         <Typography
           align={'center'}
           variant={'subtitle2'}
+          component="h5"
           color="text.secondary"
           gutterBottom
         >

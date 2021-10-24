@@ -13,7 +13,11 @@ import 'aos/dist/aos.css';
 export default function TopLayout(props) {
   return (
     <React.Fragment>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: 'id',
+        }}
+      >
         <meta charSet="utf-8" />
         <link
           rel="shortcut icon"

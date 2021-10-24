@@ -6,6 +6,8 @@ import Box from '@mui/material/Box';
 import { StaticImage } from 'gatsby-plugin-image';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import LiteYouTubeEmbed from 'react-lite-youtube-embed';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
 
 const VideoSection = () => {
   const theme = useTheme();
@@ -46,7 +48,11 @@ const VideoSection = () => {
           alignItems={'center'}
         >
           <Box height={1} width={1}>
-            <Box
+            <LiteYouTubeEmbed
+              id="AK11Ad3BGLs"
+              title="OSENG MERCON INI LANGSUNG MEMBASAHI KERONGKONGAN NCESS | BIKIN LAPER (30/9/21) P2"
+            />
+            {/* <Box
               component={'iframe'}
               title="OSENG MERCON INI LANGSUNG MEMBASAHI KERONGKONGAN NCESS | BIKIN LAPER (30/9/21) P2"
               width="100%"
@@ -58,7 +64,7 @@ const VideoSection = () => {
               allowFullScreen
               boxShadow={4}
               borderRadius={4}
-            />
+            /> */}
           </Box>
         </Box>
       </Grid>
