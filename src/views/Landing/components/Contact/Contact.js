@@ -34,7 +34,12 @@ const Contact = () => {
     return (
       <Box>
         <Box marginBottom={2}>
-          <Typography variant={'h4'} sx={{ fontWeight: 700 }} gutterBottom>
+          <Typography
+            variant="h4"
+            component="h2"
+            sx={{ fontWeight: 700 }}
+            gutterBottom
+          >
             Hubungi kami
           </Typography>
         </Box>

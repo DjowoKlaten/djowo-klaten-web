@@ -33,7 +33,7 @@ module.exports = {
     'gatsby-plugin-sitemap',
   ],
   siteMetadata: {
-    title: 'Djowo Klaten',
+    title: 'Rumah Makan Penyetan dan Mie Jawa - Djowo Klaten',
     siteUrl: 'https://djowoklaten.id'
   },
 };

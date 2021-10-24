@@ -23,7 +23,7 @@ const Topbar = ({ onSidebarOpen, pages }) => {
         display={'flex'}
         component="a"
         href="/"
-        title="theFront"
+        title="Djowo Klaten"
         width={{ xs: 100, md: 120 }}
       >
         <StaticImage

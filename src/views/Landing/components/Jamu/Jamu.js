@@ -11,6 +11,7 @@ const Jamu = () => {
     <Box>
       <Typography
         variant="h1"
+        component="h2"
         align={'center'}
         gutterBottom
         sx={{
@@ -23,7 +24,7 @@ const Jamu = () => {
       </Typography>
       <Typography
         variant="h6"
-        component="p"
+        component="h3"
         color="text.primary"
         align={'center'}
         sx={{
