@@ -2,25 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-// import Link from '@mui/material/Link';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import { 
-  // NavItem,
-  ThemeModeToggler } from './components';
+import {
+  ThemeModeToggler,
+} from './components';
 
 const Topbar = ({ onSidebarOpen, pages }) => {
   const theme = useTheme();
-  // const {
-  //   landings: landingPages,
-  //   secondary: secondaryPages,
-  //   company: companyPages,
-  //   account: accountPages,
-  //   portfolio: portfolioPages,
-  //   blog: blogPages,
-  // } = pages;
-
   return (
     <Box
       display={'flex'}
@@ -35,61 +26,13 @@ const Topbar = ({ onSidebarOpen, pages }) => {
         title="theFront"
         width={{ xs: 100, md: 120 }}
       >
-        <Box
-          component={'img'}
+        <StaticImage
           src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.png"
-          height={'32px'}
+          height="32"
+          alt="Djowo Klaten"
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
-        {/* <Box>
-          <NavItem
-            title={'Landings'}
-            id={'landing-pages'}
-            items={landingPages}
-          />
-        </Box>
-        <Box marginLeft={2.5}>
-          <NavItem
-            title={'Company'}
-            id={'company-pages'}
-            items={companyPages}
-          />
-        </Box>
-        <Box marginLeft={2.5}>
-          <NavItem
-            title={'Account'}
-            id={'account-pages'}
-            items={accountPages}
-          />
-        </Box>
-        <Box marginLeft={2.5}>
-          <NavItem
-            title={'Pages'}
-            id={'secondary-pages'}
-            items={secondaryPages}
-          />
-        </Box>
-        <Box marginLeft={2.5}>
-          <NavItem title={'Blog'} id={'blog-pages'} items={blogPages} />
-        </Box>
-        <Box marginLeft={2.5}>
-          <NavItem
-            title={'Portfolio'}
-            id={'portfolio-pages'}
-            items={portfolioPages}
-          />
-        </Box>
-        <Box marginLeft={2.5}>
-          <Link
-            underline="none"
-            component="a"
-            href="/docs/introduction"
-            color="text.primary"
-          >
-            Docs
-          </Link>
-        </Box> */}
         <Box marginLeft={2.5}>
           <ThemeModeToggler />
         </Box>

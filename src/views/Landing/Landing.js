@@ -6,6 +6,10 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 import Contact from './components/Contact';
 import Welcome from './components/Welcome';
+import MieJawa from './components/MieJawa';
+import { StaticImage } from 'gatsby-plugin-image';
+import VideoSection from './components/VideoSection';
+import Jamu from './components/Jamu';
 
 const Agency = () => {
   useEffect(() => {
@@ -65,6 +69,49 @@ const Agency = () => {
               </NoSsr>
             </Box>
           </Box>
+        </Container>
+      </Box>
+      <Box
+        className={'jarallax'}
+        data-jarallax
+        data-speed="0.2"
+        position={'relative'}
+        minHeight={'100vh'}
+        display={'flex'}
+        alignItems={'center'}
+        id="mie-jawa"
+      >
+        <StaticImage
+          className="jarallax-img"
+          src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/food/sajian-6.jpeg"
+          alt="Mie Godog"
+        />
+        <Container>
+          <MieJawa />
+        </Container>
+      </Box>
+      <Box bgcolor={'primary.main'}>
+        <Container>
+          <VideoSection />
+        </Container>
+      </Box>
+      <Box
+        className={'jarallax'}
+        data-jarallax
+        data-speed="0.2"
+        position={'relative'}
+        minHeight={'100vh'}
+        display={'flex'}
+        alignItems={'center'}
+        id="jamu"
+      >
+        <StaticImage
+          className="jarallax-img"
+          src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/food/sajian-7.jpeg"
+          alt="Jamu"
+        />
+        <Container>
+          <Jamu />
         </Container>
       </Box>
       <Box

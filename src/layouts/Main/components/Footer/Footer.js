@@ -2,17 +2,13 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import { useTheme } from '@mui/material/styles';
 import { IconButton } from '@mui/material';
 import Instagram from '@mui/icons-material/Instagram';
 import { WhatsApp } from '@mui/icons-material';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Footer = () => {
-  const theme = useTheme();
-  const { mode } = theme.palette;
-
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
@@ -30,20 +26,26 @@ const Footer = () => {
             title="Djowo Klaten"
             width={80}
           >
-            <Box
-              component={'img'}
+            <StaticImage
               src="https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/djowo-klaten.png"
-              height={'32px'}
+              height="32"
+              alt="Djowo Klaten"
             />
           </Box>
           <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
             <Box marginTop={1} marginRight={2}>
-              <IconButton aria-label="instagram" href="https://www.instagram.com/djowo_klaten/">
+              <IconButton
+                aria-label="instagram"
+                href="https://www.instagram.com/djowo_klaten/"
+              >
                 <Instagram />
               </IconButton>
             </Box>
             <Box marginTop={1} marginRight={2}>
-              <IconButton aria-label="whatsapp" href="https://wa.me/c/6287774833596">
+              <IconButton
+                aria-label="whatsapp"
+                href="https://wa.me/c/6287774833596"
+              >
                 <WhatsApp />
               </IconButton>
             </Box>
