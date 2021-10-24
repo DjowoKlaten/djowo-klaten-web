@@ -64,7 +64,7 @@ const Welcome = () => {
           color: 'grabfood',
         },
         {
-          src: 'https://svgshare.com/i/bSB.svg',
+          src: 'https://assets-djowoklaten.s3.ap-southeast-1.amazonaws.com/shopee-food-inverted.svg',
           href: 'https://linktr.ee/DjowoKlaten_Pusat',
           color: 'shopeefood',
         },
