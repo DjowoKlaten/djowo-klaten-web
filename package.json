@@ -43,7 +43,7 @@
     "card-validator": "8.1.1",
     "formik": "2.2.9",
     "gatsby": "4.0.0",
-    "gatsby-build-newrelic": "1.1.3",
+    "gatsby-build-newrelic": "1.1.17",
     "gatsby-plugin-gatsby-cloud": "4.0.0",
     "gatsby-plugin-image": "2.0.0",
     "gatsby-plugin-material-ui": "4.0.3",
